@@ -1,0 +1,22 @@
+# local config sample
+# copy this file to build.properties.local
+# same as config in `build.properties` but with high priority
+platform linux
+
+architecture x86
+
+vendor centos
+
+toolchain gcc-4.8.5
+
+# setting ndk-build for android
+# ANDROID_NDK /media/lifei/0000E914000A7648/Android/ndk/android-ndk-r15-beta1
+# ANDROID_NDK /media/lifei/0000E914000A7648/Android/ndk/android-ndk-r14b
+# ANDROID_NDK /media/lifei/0000E914000A7648/Android/ndk/android-ndk-r13b
+
+# setting compiler for arm linux
+# cmake_c_compiler /media/lifei/0000E914000A7648/Android/R16_changhong/linux-x86/arm/toolchain-sunxi/toolchain/bin/arm-openwrt-linux-gcc
+# cmake_cxx_compiler /media/lifei/0000E914000A7648/Android/R16_changhong/linux-x86/arm/toolchain-sunxi/toolchain/bin/arm-openwrt-linux-g++
+# cmake_c_compiler /opt/arm-linux/bin/arm-linux-gnueabihf-gcc
+# cmake_cxx_compiler  /opt/arm-linux/bin/arm-linux-gnueabihf-gcc
+# cmake_find_root_path /opt/arm-linux
