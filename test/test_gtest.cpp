@@ -15,13 +15,23 @@
 #include "gtest/gtest.h"
 #include "hobotlog/hobotlog.hpp"
 #include "learn_py/learn_py.h"
+#include <sys/utsname.h>
 
 namespace {
 
-TEST(learn_py, api) {
+TEST(test, gtest) {
   SetLogLevel(INFO);
   example::HelloWorldlearn_py obj;
-  LOGI << "Test learn_py api file success";
+  int a = 0;
+  int b = 34;
+  struct utsname name;
+  if (uname(&name)) {
+    exit(-1);
+  }
+  LOGI << "Hello! Your remote computer's OS is "
+       << name.sysname << " "
+       << name.release;
+  LOGI << "Test learn_py gtest success";
 }
 
 }

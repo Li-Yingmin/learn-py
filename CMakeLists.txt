@@ -33,8 +33,8 @@ else ()
     return()
 endif ()
 # 编译模式
-set(CMAKE_BUILD_TYPE Release)
-#set(CMAKE_BUILD_TYPE Debug)
+# set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_BUILD_TYPE Debug)
 
 # 编译参数
 if (${CMAKE_BUILD_TYPE} STREQUAL "Release")
