@@ -12,5 +12,7 @@
 #include "learn_py/learn_py.h"
 
 example::HelloWorldlearn_py::HelloWorldlearn_py() {
+  int a = 34;
+  int b = 444;
   std::cout << "hello world learn_py!" << std::endl;
 }

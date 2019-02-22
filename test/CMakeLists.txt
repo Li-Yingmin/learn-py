@@ -11,6 +11,7 @@ include_directories(
 set(SOURCE_FILES
         gtest_main.cc
         test_api.cpp
+        test_gtest.cpp
         )
 # 添加依赖
 ## base deps

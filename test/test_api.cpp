@@ -16,6 +16,7 @@ namespace {
 
 TEST(learn_py, api) {
   SetLogLevel(INFO);
+  example::HelloWorldlearn_py obj;
   LOGI << "Test learn_py api file success";
 }
 
